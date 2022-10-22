@@ -5,11 +5,13 @@ import 'package:one_touch/Providers/HomeProvider.dart';
 import 'package:one_touch/presentation/common/SearchBox.dart';
 
 import 'package:one_touch/presentation/common/TitleBarHome.dart';
+import 'package:one_touch/presentation/components/Categories.dart';
 // import 'package:one_touch/presentation/pages/Notifications.dart';
 
 // import 'package:one_touch/presentation/components/Categories.dart';
 import 'package:one_touch/presentation/components/DrawerComponent.dart';
 import 'package:one_touch/presentation/components/HomeSlider.dart';
+import 'package:one_touch/presentation/components/MainMenu.dart';
 // import 'package:one_touch/presentation/components/MainMenu.dart';
 import 'package:provider/provider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -114,19 +116,19 @@ class _DashboardState extends State<Dashboard> {
                             ),
                           ),
                         ),
-                        // Image.asset("assets/images/banner.png"),
+                     
                         SizedBox(
                           height: 30,
                         ),
-                        // MainMenu(),
+                        MainMenu(),
 
-                        // Padding(
-                        //     padding: const EdgeInsets.only(bottom: 20, top: 20),
-                        //     child: Text("Categories",
-                        //         style: TextStyle(
-                        //             fontSize: 22,
-                        //             fontWeight: FontWeight.w500))),
-                        // Categories()
+                        Padding(
+                            padding: const EdgeInsets.only(bottom: 20, top: 20),
+                            child: Text("Categories",
+                                style: TextStyle(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.w500))),
+                        Categories()
                       ]),
                 ),
               ),
